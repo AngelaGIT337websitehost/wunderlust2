@@ -596,3 +596,98 @@ footer a {
         text-transform: none;
     }
 }
+/* ------ Computer--------- */
+@media screen and (min-width: 1000px){
+    header{
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr;
+        grid-template-rows: 2fr .5fr;
+        padding: 0;
+    }
+    #logo img{
+        width:100%;
+    }
+    h1{ 
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    header p{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    nav{
+        grid-column-start: 3;
+        grid-column-end: -1;
+        grid-row-start: 1;
+        
+    }
+    #menu-toggle{
+        grid-column-start: 3;
+        grid-column-end: -1;
+        grid-row-start: 1;
+        width: 50%;
+        position: absolute;
+        top:0;
+        right:0;
+    }
+    nav ul{
+        padding:0;
+        margin:0;
+    }
+    #intro{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr 3fr;
+        gap: 10px;
+        
+    }
+    #intro h2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+    }
+    #intro p{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+    }
+    #img-grid{
+        grid-row-start: span 2;
+        grid-column-start: 2;
+        grid-column-end: -1;
+    }
+    #plan div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #testimonials div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #about{
+        padding: 3rem;
+    }
+    #about div{
+        width:80%;
+        margin:auto;
+    }
+    #contact{
+        padding-top: 2rem;
+    }
+    form{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 1rem;;
+    }
+    
+    footer{
+        display:grid;
+        grid-template-columns: 8fr 1fr 1fr;
+    }
+    footer p{
+        text-align: left;
+        padding-left: 10px;
+    }
+}
